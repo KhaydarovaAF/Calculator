@@ -23,7 +23,8 @@ public class Main {
         int num2;
 
         boolean b = stringArr[0].charAt(0) >= '0' && stringArr[0].charAt(0) <= '9';
-        if (!b && stringArr[2].charAt(0) >= '0' && stringArr[2].charAt(0) <= '9') throw new IOException();
+        boolean a = stringArr[2].charAt(0) >= '0' && stringArr[2].charAt(0) <= '9';
+        if (b!=a) throw new IOException();
         if (b){
             num1 = Integer.parseInt(stringArr[0]);
             num2 = Integer.parseInt(stringArr[2]);
